@@ -7,6 +7,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.button {
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 1em 3em;
+    margin-top: 1em;
+    display: inline-block;
+    border-radius: 1em;
+}
+
 .header {
     overflow: hidden;
     background-color: #ffffff;
@@ -55,16 +65,23 @@ body {
     }
 }
 
+.skill {
+    border: 1px solid #50a9d1;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: auto;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1.3em;
+    padding: 7px 18px;
+    border-radius: 8px;
+}
+
 .text-body {
     margin: 4em;
 }
 
-.button {
-    border: 1px solid black;
-    text-decoration: none;
-    color: black;
-    padding: 1em 3em;
-    margin-top: 1em;
-    display: inline-block;
-    border-radius: 1em;
+.work-div {
+    background-color: rgb(204, 171, 171);
 }
