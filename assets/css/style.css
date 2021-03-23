@@ -17,6 +17,11 @@ body {
     border-radius: 1em;
 }
 
+.footer {
+    float: right;
+    font-size: 14px;
+}
+
 .header {
     overflow: hidden;
     background-color: #ffffff;
