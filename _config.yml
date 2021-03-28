@@ -1,1 +1,4 @@
 title: You are now in Absolute Space
+collections:
+  docs:
+    output: true
