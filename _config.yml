@@ -2,3 +2,10 @@ title: You are now in Absolute Space
 collections:
   docs:
     output: true
+exclude:
+  - bin
+  - design.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

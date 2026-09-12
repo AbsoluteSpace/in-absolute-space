@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Local dev wrapper: runs `bundle exec jekyll` with a Ruby 3.2 compat shim
+# preloaded (see bin/_taint_compat.rb). Usage: bin/jekyll serve | build
+set -euo pipefail
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export RUBYOPT="${RUBYOPT:-} -r${DIR}/_taint_compat.rb"
+exec bundle exec jekyll "$@"
