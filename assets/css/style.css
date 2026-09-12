@@ -3,34 +3,17 @@
 }
 
 body {
-    margin: 1em;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.button {
-    border: 1px solid black;
-    text-decoration: none;
-    color: black;
-    padding: 1em 3em;
-    margin-top: 1em;
-    display: inline-block;
-    border-radius: 1em;
-}
-
-a.button:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.footer {
-    float: right;
-    font-size: 14px;
+    background-color: #ffffff;
+    background-image: radial-gradient(circle, #cccccc 1px, transparent 1px);
+    background-size: 24px 24px;
 }
 
 .header {
     overflow: hidden;
-    background-color: #a5d5e0;
-    padding: 1.25em 0.75em;
+    padding: 1.25em 1.5em;
+    border-bottom: 1px solid black;
 }
 
 .header a {
@@ -41,27 +24,20 @@ a.button:hover {
     text-decoration: none;
     font-size: 1.2em;
     line-height: 1.5em;
-    border-radius: 0.5em;
 }
 
 .header a.logo {
-    font-size: 2em; 
+    font-size: 2em;
     font-weight: bold;
 }
 
 .header a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.header a:active {
-    background-color: dodgerblue;
-    color: white;
+    text-decoration: underline;
 }
 
 .header a.active {
-    background-color: dodgerblue;
-    color: white;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
 }
 
 .header-right {
@@ -80,28 +56,60 @@ a.button:hover {
     }
 }
 
-.skill {
-    border: 1px solid #50a9d1;
-    margin-right: 10px;
-    text-transform: uppercase;
-    font-weight: 500;
-    width: auto;
-    display: inline-block;
-    font-size: 11px;
-    line-height: 1.3em;
-    padding: 7px 18px;
-    border-radius: 8px;
-}
-
 .text-body {
     margin: 4em;
 }
 
-.work-div {
-    background-color: #ecdada;
-    border-radius: 16px;
-    width: auto;
-    border: 1px solid #000000;
-    margin-right: 10px;
-    padding: 7px 18px;
+.home-img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.home-img {
+    max-width: 33%;
+    height: auto;
+}
+
+.coord-plane {
+    position: relative;
+    min-height: 50vh;
+    margin: 4em;
+}
+
+.coord-point {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 1.3em;
+    white-space: nowrap;
+}
+
+.coord-marker {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.coord-point a {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+}
+
+.coord-point a:hover {
+    text-decoration-thickness: 2px;
+}
+
+@media screen and (max-width: 35em) {
+    .coord-plane {
+        min-height: auto;
+    }
+
+    .coord-point {
+        position: static;
+        justify-content: center;
+        margin: 1em 0;
+    }
 }
