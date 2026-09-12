@@ -1,5 +1,2 @@
 - { name: Home, link: / }
-- { name: Work, link: /work }
-- { name: Projects, link: /projects }
-- { name: Articles, link: /articles }
 - { name: Contact, link: /contact }
